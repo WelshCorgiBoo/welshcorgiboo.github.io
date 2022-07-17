@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-row-corner">
+        <img src="logo/logo1.jpg" alt="Dev.WeshCorgiBoo">
+    </div>
+    
+    <div class="top-row-left">
+        <h4 id="clock"></h4>
+    </div>
+
+    <div class="top-row-center">
+        <div class="myIp" id="myIp"></div>
+    </div>
+
+    <div class="top-row-right">
+        <div class="weather" id="weather"></div>
+    </div>
+
+    <div class="user_container" id="user_container">
+        <span class="user">Hello, what's your name? & birthDay</span>
+        <form class="form" id="user_form">
+            <ul>
+                <li><input type="text" class="input" id="user_name" required maxlength="15" autocomplete="off" placeholder="your Name"></li>
+                <li><input type="text" class="input" id="user_birthDay" required maxlength="10" autocomplete="off" placeholder="ex)19930101"></li>
+            </ul>
+            <input type='submit' class="hidden">
+        </form>
+    </div>
+
+    <div class="greeting_container hidden" id="greeting_container"></div>
+
+    <div class="todo_container hidden" id="todo_container">
+        <span class="question">What us your main fours for today?</span>
+        <form class="form" id="todo_form">
+            <input type="text" class="input" id="todo_input" autocomplete="off" required />
+        </form>
+        <span class="todo_birthday" id="birthday" ></span>
+        <ul class="todo_list todo" id="todo_list">
+            <div class="todoheader">
+                <h1 id="today"></h1>
+            </div>
+        </ul>
+    </div>
+    <div class="quote_container" id="quote_container">
+        <div class="quote_text" id="quote">
+            <span></span>
+        </div>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="clock.js"></script>
+    <script src="myip.js"></script>
+    <script src="weather.js"></script>
+    <script src="greetings.js"></script>
+    <script src="todo.js"></script>
+    <script src="quotes.js"></script>
+</body>
+</html>

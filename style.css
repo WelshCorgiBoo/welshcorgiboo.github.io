@@ -1,0 +1,263 @@
+body {
+    background-color: #000;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/** input 안내문구 색상 변경 */
+input::placeholder {
+    color: rgb(200, 212, 29);
+    font-style: italic;
+  }
+  textarea::placeholder {
+    color: blue;
+    font-weight: bold;
+  }
+
+
+/** 폰트컬러 css */
+body,input,textarea,button {   
+    color: #ffffff;
+}
+.hidden {
+    display: none ! important;
+}
+
+/** 로고위치 css */
+.top-row-corner {
+    width: 30px;
+    height: 30px;
+    position: center;
+    top: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** 로고크기 및 모양 css */
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    align-content: center;
+}
+
+/** 현재시간 css */
+.top-row-left {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    right: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/** ip css */
+.top-row-center {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+}
+
+/** 날씨 css */
+.top-row-right {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/**  중앙 form css */
+.user_container {
+    width: 100%;
+    height: 100%;
+    margin-top: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    animation: fadeIn 1.5s linear forwards;
+}
+
+/** 중앙 글 css */
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/** 중앙 글 밑 text css */
+.form .input {
+    color: rgba(255, 255, 255, 0.945);
+    font-size: 2rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #ffffff;
+    background-color: transparent;
+}
+
+/** 로그인 이후 입력화면 */
+.greeting_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 30vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s linear forwards;
+}
+
+.greeting_container .greeting {
+    margin-top: 0;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+/** 로그인 이후 화면 */
+.todo_container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.todo_List {
+    margin: 20px 0px;
+    font-size: 20px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s linear;
+}
+
+.todo_list span {
+    color: #ffffff;
+    font-size: 23px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.todo_list span .completed {
+    font-size: 9px;
+}
+
+.todo_list button {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#todo {
+    margin: auto;
+    height: auto;
+    font-size: 21px;
+    color: #ffffff;
+    position: absolute;
+    right: 65px;
+    bottom: 40px;
+}
+
+.todo {
+    background-color: rgb(10, 10, 10);
+    grid-template-rows: auto 30px;
+    opacity: .8;
+    height: auto;
+    width: 320px;
+    z-index: 3;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    margin-top: -10rem;
+    border-radius: 2%;
+    right: 20px;
+}
+
+.todoheader {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 11px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    height: 30px;
+}
+
+/** 남은생일 내용 */
+.todo_birthday {
+    width: 320px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 20px;
+    right: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.question {
+    font-size: 1.6rem;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/** 하단 명언 내용 */
+.quote_container {
+    position: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 75px;
+    left: 0;
+    bottom: 10px;
+    right: 0;
+    margin: auto;
+}
+
+.quote_text {
+    text-align: center;
+    font-size: 40px;
+    color: #1fe4da;
+    margin-top: 15rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px darkorange;
+}
