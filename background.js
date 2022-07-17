@@ -16,10 +16,9 @@ const jsbody = document.querySelector("body");
 const bgImage = document.createElement("img");
 function backgd() {
     const chosenImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
-    jsbody.style.backgroundImage = `url(https://WelshCorgiBoo.github.io/backgroundImages/${chosenImage})`;
+    jsbody.style.backgroundImage = `url(https://welshcorgiboo.github.io/backgroundimages/${chosenImage})`;
     jsbody.style.backgroundSize = `cover`;
 }
-
 
 
 
