@@ -1,14 +1,14 @@
 const backgroundImages = [
-    "back1.jpg",
-    "back2.jpg",
-    "back3.jpg",
-    "back4.jpg",
-    "back5.jpg",
-    "back6.jpg",
-    "back7.jpg",
-    "back8.jpg",
-    "back9.jpg",
-    "back10.jpg",
+    "01.jpg",
+    "02.jpg",
+    "03.jpg",
+    "04.jpg",
+    "05.jpg",
+    "06.jpg",
+    "07.jpg",
+    "08.jpg",
+    "09.jpg",
+    "10.jpg",
 ]
 
 
