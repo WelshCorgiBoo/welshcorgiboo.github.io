@@ -110,7 +110,7 @@ function deleteTodo(e) {
     const li = (e.target.parentElement).parentElement;
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
     li.remove();
-    saveToDos();
+    saveToDos(toDos);
 }
 
 // ~ 해당 이벤트 리스너 맨밑에 있으면 밑에 내용이 서브밋으로 초기화됨
