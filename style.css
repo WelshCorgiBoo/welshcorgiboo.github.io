@@ -281,7 +281,14 @@ img {
         margin-top: 20px;
         margin-left: -15px;
         font-size: 13px;
+    }
 
+    .form .input {
+        font-size: 0.9rem;
+    }
+
+    .todo_list li span {
+        font-size: 0.8rem;
     }
 
     .top-row-center {
