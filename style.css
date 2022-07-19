@@ -265,21 +265,22 @@ img {
 @media (max-width: 767px) {
 
     /* 모바일 */
-    .weather {
+    .top-row-right {
         display: block;
-        margin-top: 30px;
-        font-size: 20px;
+        margin-top: 0px;
+        font-size: 13px;
     }
 
     .top-row-left {
         margin-top: 0px;
-        font-size: 10px;
+        margin-left: -15px;
+        font-size: 13px;
 
     }
 
     .top-row-center {
         margin-top: 0px;
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .greeting_container .greeting {
@@ -316,7 +317,11 @@ img {
 
     .quote_text {
         font-size: 0.8rem;
-        margin-top: -10rem;
+        margin-top: 0rem;
+    }
+    .todo_birthday {
+        font-size: 0.8rem;
+        margin-top: 0rem;
     }
 
     .todoheader {
