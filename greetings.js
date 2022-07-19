@@ -29,6 +29,17 @@ if(localStorage.getItem(USERNAME_KEY)) {
 } else {
     function setLocalStorage(e) {
         e.preventDefault();
+        
+        if(null == userName.value || "" == userName.value) {
+            alert("이름을 작성해 주세요.");
+            return;
+        }
+        if(10 !== userBirthDay.value.length) {
+            alert("생년월일을 8자리 확인해주세요");
+            return;
+        }
+        
+
         localStorage.setItem(USERNAME_KEY, userName.value);
         localStorage.setItem("userBirthDay", userBirthDay.value);
         toggle();
@@ -54,6 +65,7 @@ function message(hour, userName) {
     }
     greeting.appendChild(span);
 }
+
 
 
 userBirthDay.addEventListener('input', BirthDayForm);
