@@ -272,18 +272,19 @@ img {
     }
 
     .top-row-left {
-        margin-top: 30px;
-        font-size: 20px;
+        margin-top: 0px;
+        font-size: 10px;
+
     }
 
     .top-row-center {
-        margin-top: 10px;
-        font-size: 15px;
+        margin-top: 0px;
+        font-size: 10px;
     }
 
     .greeting_container .greeting {
         margin-top: 0;
-        font-size: 1rem;
+        font-size: 10px;
     }
 
     .todo_List {
